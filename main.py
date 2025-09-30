@@ -12,7 +12,7 @@ mydate = date + timedelta(days=1)
 fp = open("epexspot.txt","w")
 fp.write(str(mydate)+'\n')
 main_url = "http://www.epexspot.com/en/market-data?market_area=DE-LU&delivery_date="
-main_url = main_url + str(mydate) + "&modality=Auction&sub_modality=DayAhead&product=60&data_mode=table"
+main_url = main_url + str(mydate) + "&modality=Auction&sub_modality=DayAhead&product=15&data_mode=table"
 print (main_url)
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36'}
 #headers = {'Mozilla/5.0 (platform; rv:gecko-version) Gecko/gecko-trail Firefox/firefox-version'}
