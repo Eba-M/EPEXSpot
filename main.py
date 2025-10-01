@@ -4,8 +4,6 @@ n = len(sys.argv)
 if n>1:
     mday = int(sys.argv[1])
 
-from typing import Any
-
 from bs4 import BeautifulSoup, PageElement
 import requests
 #print (sys.argv[1])
